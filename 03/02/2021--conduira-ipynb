@@ -1,0 +1,76 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyP2UVcEgcgIy8AnmXzvT1Ei",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mech123/practice/blob/master/03/02/2021--conduira-ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nzI-g3xniWTu",
+        "outputId": "bbab9b27-f894-48bd-ba04-ee62460cb857"
+      },
+      "source": [
+        "while(True):\r\n",
+        "  principal=float(input(\"enter the principal amount :\"))\r\n",
+        "  tenure=int(input(\"please enter the tenure of your investment in years :\"))\r\n",
+        "  rate=0.07\r\n",
+        "  maturity_amount=principal*(1+rate)**tenure\r\n",
+        "  print(\"the maturity amount of your investment will be :\",maturity_amount)\r\n",
+        "  response=input(\"would like to use the calculator again ? Y/N\")\r\n",
+        "  if(response=='N'):\r\n",
+        "    print(\"thank you for using the calculator :\")\r\n",
+        "    break\r\n",
+        "  elif response=='Y':\r\n",
+        "    continue\r\n",
+        "  else:\r\n",
+        "    print(\"sorry we didn't understand ,the calculator \")"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter the principal amount :5500\n",
+            "please enter the tenure of your investment in years :2\n",
+            "the maturity amount of your investment will be : 6296.95\n",
+            "would like to use the calculator again ? Y/NY\n",
+            "enter the principal amount :10000\n",
+            "please enter the tenure of your investment in years :4\n",
+            "the maturity amount of your investment will be : 13107.960100000002\n",
+            "would like to use the calculator again ? Y/NY\n",
+            "enter the principal amount :10000\n",
+            "please enter the tenure of your investment in years :4\n",
+            "the maturity amount of your investment will be : 13107.960100000002\n",
+            "would like to use the calculator again ? Y/NN\n",
+            "thank you for using the calculator :\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
